@@ -15,8 +15,8 @@ body > * {
 }
 
 h1 {
-    font-size: 36pt;
-    margin: -20px 0;
+    font-size: 48pt;
+    margin: -24px 0;
 }
 
 a {
@@ -35,11 +35,21 @@ a:focus {
 }
 
 .contact {
-    font-size: 18pt;
+    font-size: 24pt;
     display: inline-block;
-    margin: 5px;
+    margin: 10px;
 }
 
-.github {}
+.github:before {
+    content: url(../images/github-logo.svg);
+    display: inline-block;
+    margin-right: 8px;
+    transform: translateY(8px);
+}
 
-.twitter {}
+.twitter:before {
+    content: url(../images/twitter-logo.svg);
+    display: inline-block;
+    margin-right: 6px;
+    transform: translateY(6px);
+}
