@@ -47,9 +47,13 @@ a:focus {
     transform: translateY(8px);
 }
 
+.github:hover:before {}
+
 .twitter:before {
     content: url(../images/twitter-logo.svg);
     display: inline-block;
     margin-right: 6px;
     transform: translateY(6px);
 }
+
+.twitter:hover:before {}
