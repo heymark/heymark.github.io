@@ -1,11 +1,12 @@
 body {
-    width: 100%;
+    background-color: #222;
+    color: #ccc;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 16px;
     height: 100%;
     position: absolute;
     text-align: center;
-    color: #ccc;
-    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-    background-color: #222;
+    width: 100%;
 }
 
 body > * {
@@ -15,8 +16,8 @@ body > * {
 }
 
 h1 {
-    font-size: 48pt;
-    margin: -24px 0;
+    font-size: 4rem;
+    margin: -2.5rem 0;
 }
 
 a {
@@ -35,25 +36,32 @@ a:focus {
 }
 
 .contact {
-    font-size: 24pt;
     display: inline-block;
-    margin: 10px;
+    font-size: 2rem;
+    margin: 1rem;
+}
+
+.contact:before {
+    background-image: url(../images/logos.svg);
+    content: "";
+    display: inline-block;
+    height: 2rem;
+    transform: translate(-20%, 20%);
+    width: 2rem;
 }
 
 .github:before {
-    content: url(../images/github-logo.svg);
-    display: inline-block;
-    margin-right: 8px;
-    transform: translateY(8px);
+    background-position: 100% 100%;
 }
 
-.github:hover:before {}
+.github:hover:before {
+    background-position: 100% 0;
+}
 
 .twitter:before {
-    content: url(../images/twitter-logo.svg);
-    display: inline-block;
-    margin-right: 6px;
-    transform: translateY(6px);
+    background-position: 0 100%;
 }
 
-.twitter:hover:before {}
+.twitter:hover:before {
+    background-position: 0 0;
+}
