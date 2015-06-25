@@ -4,6 +4,8 @@ body {
     font-family: Arial, sans-serif;
     font-size: 16px;
     height: 100%;
+    margin: 0;
+    padding: 0;
     position: absolute;
     text-align: center;
     width: 100%;
@@ -67,4 +69,27 @@ a:hover {
 
 .twitter:hover:before {
     background-position: 0 0;
+}
+
+@media (max-width: 45em) {
+    h1 {
+        font-size: 3rem;
+        margin: -3rem 0 2rem 0;
+    }
+    .contact {
+        display: block;
+    }
+}
+
+@media (max-width: 30em) {
+    h1 {
+        font-size: 2rem;
+    }
+    .contact {
+        font-size: 1.5rem;
+        margin: 0.5rem;
+    }
+    .contact:before {
+        display: none;
+    }
 }
