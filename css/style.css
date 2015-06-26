@@ -1,6 +1,9 @@
 body {
-    background-color: #222;
-    color: #ccc;
+    background-color: rgb(40, 30, 30);
+    background-image: url(../images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #d1c1c1;
     font-family: Arial, sans-serif;
     font-size: 16px;
     height: 100%;
@@ -31,7 +34,7 @@ a {
 
 a:link,
 a:visited {
-    color: #666;
+    color: rgb(100, 85, 85);
 }
 
 a:active,
