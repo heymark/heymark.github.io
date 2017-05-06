@@ -1,100 +1,100 @@
 body {
-    background: url(../images/background.jpg) no-repeat center center fixed;
-    background-color: rgb(40, 30, 30);
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    color: rgb(220, 200, 200);
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    text-align: center;
-    width: 100%;
+  background-color: #00AAFF;
+  color: rgba(255, 255, 255, 0.8);
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  animation: cycle 120s infinite;
+}
+
+@keyframes cycle {
+  0% {
+    background-color: #0088EE;
+  }
+  20% {
+    background-color: #8800EE;
+  }
+  40% {
+    background-color: #EE0088;
+  }
+  60% {
+    background-color: #EE8800;
+  }
+  80% {
+    background-color: #88EE00;
+  }
+  100% {
+    background-color: #0088EE;
+  }
 }
 
 body > * {
-    position: relative;
-    top: 50%;
-    transform: translateY(-75%);
-}
+  position: relative;
+  top: 50%;
+  transform: translateY(-75%); }
 
 h1 {
-    font-family: "Montserrat", sans-serif;
-    font-size: 4rem;
-    letter-spacing: -0.025em;
-    margin: -1.5rem 0;
-}
+  font-family: "Montserrat", sans-serif;
+  font-size: 4rem;
+  letter-spacing: -0.0125em;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.125);
+  margin: -1.5rem 0; }
 
 a {
-    font-family: "Lato", sans-serif;
-    text-decoration: none;
-}
+  font-family: "Lato", sans-serif;
+  text-decoration: none; }
 
 a:link,
 a:visited {
-    color: rgb(150, 130, 130);
-}
+  color: rgba(255, 255, 255, 0.75); }
 
 a:active,
 a:hover {
-    color: rgb(245, 50, 0);
-}
+  color: rgba(255, 255, 255, 1); }
 
 .contact {
-    display: inline-block;
-    font-size: 2rem;
-    margin: 1rem;
-}
+  display: inline-block;
+  font-size: 2rem;
+  margin: 1rem; }
 
 .contact:before {
-    background-image: url(../images/logos.svg);
-    content: "";
-    display: inline-block;
-    height: 2rem;
-    width: 2rem;
-}
+  background-image: url(../images/logos.svg);
+  content: "";
+  display: inline-block;
+  height: 2rem;
+  width: 2rem; }
 
 .github:before {
-    background-position: 100% 100%;
-    transform: translate(-25%, 20%);
-}
+  background-position: 100% 100%;
+  transform: translate(-25%, 20%); }
 
 .github:hover:before {
-    background-position: 100% 0;
-}
+  background-position: 100% 0; }
 
 .twitter:before {
-    background-position: 0 100%;
-    transform: translate(-15%, 30%);
-}
+  background-position: 0 100%;
+  transform: translate(-15%, 30%); }
 
 .twitter:hover:before {
-    background-position: 0 0;
-}
+  background-position: 0 0; }
 
 @media (max-width: 45em) {
-    h1 {
-        font-size: 3rem;
-        margin: -3rem 0 2rem 0;
-    }
-    .contact {
-        display: block;
-    }
-}
+  h1 {
+    font-size: 3rem;
+    margin: -3rem 0 2rem 0; }
+  .contact {
+    display: block; } }
 
 @media (max-width: 30em) {
-    h1 {
-        font-size: 2rem;
-    }
-    .contact {
-        font-size: 1.5rem;
-        margin: 0.5rem;
-    }
-    .contact:before {
-        display: none;
-    }
-}
+  h1 {
+    font-size: 2rem; }
+  .contact {
+    font-size: 1.5rem;
+    margin: 0.5rem; }
+  .contact:before {
+    display: none; } }
